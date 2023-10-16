@@ -1,0 +1,196 @@
+main {
+  height: calc(100vh - 120px);
+  position: relative;
+}
+main .container {
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.info {
+  width: 65%;
+}
+.image {
+  width: 35%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.image img {
+  transition: all 0.25s ease-in-out;
+}
+.image img:hover {
+  filter: saturate(0.5);
+  border-radius: 40px 0 40px 0;
+  /* filter: ; */
+}
+/* Info CSS */
+.info .name h6 {
+  color: var(--main);
+  font-size: 14px;
+  font-weight: 400;
+}
+.info .name h1 {
+  color: var(--white);
+  font-size: 50px;
+  font-weight: 500;
+  width: fit-content;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.name h1:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
+}
+.info .name h1:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--light);
+}
+
+/* Info Intro */
+.info .intro {
+  margin: 30px 0 40px 0;
+  color: var(--light);
+}
+.info .intro h2 {
+  font-weight: 500;
+  font-size: 33px;
+}
+.info .intro p {
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  line-height: 1.7;
+}
+.info .buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+/* Image */
+.image {
+  position: relative;
+  padding-right: 20px;
+}
+.image:before,
+.image:after {
+  position: absolute;
+  content: "";
+  height: 90px;
+  width: 90px;
+  z-index: -1;
+}
+.image:before {
+  background: url("./img/Maindot.png");
+  top: -23px;
+  left: 50px;
+}
+.image:after {
+  background: url("./img/darkdot.png");
+  right: -24px;
+  bottom: -48px;
+}
+.image img {
+  width: 80%;
+  object-fit: contain;
+  box-shadow: 20px 23px var(--main);
+}
+/* Stack */
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 15%;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+.stack h3 {
+  font-weight: 500;
+  color: var(--main);
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  width: fit-content;
+}
+.stack h3:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--light);
+}
+.stack .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.skills img {
+  transition: all 0.3s ease-in-out;
+}
+.skills img:hover {
+  transform: rotate(360deg);
+}
+/* Socials */
+.socials {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.socials a {
+  transition: all 0.25s ease-in-out;
+}
+.socials a:hover {
+  transform: scale(1.1);
+  opacity: 0.75;
+}
+.line {
+  height: 70px;
+  width: 1px;
+  background-color: var(--main);
+}
+
+.email {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.email a {
+  transform: rotate(90deg);
+  font-size: 12px;
+  position: absolute;
+  top: -150%;
+  color: var(--main);
+}
+.email a:after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  right: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--main);
+  transition: all 0.25s ease-in-out;
+}
+.email a:hover:after {
+  width: 100%;
+  left: 0;
+}

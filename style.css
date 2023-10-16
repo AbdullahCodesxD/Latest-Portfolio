@@ -1,0 +1,14 @@
+@import "utilities.css";
+@import "nav.css";
+@import "main.css";
+@import "about.css";
+@import "portfolio.css";
+@import "blogs.css";
+@import "contact.css";
+@import "footer.css";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--body-background);
+}

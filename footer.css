@@ -1,0 +1,18 @@
+footer {
+  background-color: #222;
+  height: 80px;
+  margin-top: 50px;
+}
+footer .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .lead {
+  color: var(--main);
+}
+footer a {
+  color: var(--main);
+  text-decoration: underline;
+}

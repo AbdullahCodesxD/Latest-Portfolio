@@ -1,0 +1,75 @@
+.blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0;
+}
+.blogs .blog:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  gap: 60px;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.blogs .blog:hover {
+  transform: skew(2deg);
+  opacity: 0.7;
+}
+.blogs .blog:nth-child(even):hover {
+  transform: skew(-2deg);
+
+  opacity: 0.7;
+}
+.blog h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--main);
+}
+.blog p {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.blog #read {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: fit-content;
+  border-top: 1px dotted var(--main);
+  gap: 10px;
+}
+.blog a.btn-main {
+  color: #000;
+  font-size: 13px;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.blog h4 {
+  color: var(--light);
+  font-weight: 400;
+  font-family: Poppins;
+  font-size: 15px;
+}
+.blog h4 a {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+.blog h4 a:hover {
+  -webkit-text-stroke: 1px #f4f4f4;
+  color: transparent !important;
+  text-decoration: none;
+}
+
+.blog img {
+  max-width: 250px;
+}
