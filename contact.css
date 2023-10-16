@@ -30,3 +30,15 @@
   color: #222;
   -webkit-text-stroke: 1px #222;
 }
+@media (max-width: 400px) {
+  #contact .flex {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  #contact .flex a {
+    width: 100%;
+    text-align: center;
+  }
+}

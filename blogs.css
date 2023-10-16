@@ -73,3 +73,29 @@
 .blog img {
   max-width: 250px;
 }
+@media (max-width: 768px) {
+  #blogs .container {
+    padding: 0px 20px;
+  }
+  #blogs h2 {
+    margin-left: 10px;
+  }
+  .blog {
+    flex-direction: column-reverse;
+  }
+
+  .blog img {
+    width: 100%;
+    max-width: initial;
+  }
+}
+@media (max-width: 400px) {
+  .blog #read {
+    flex-direction: column;
+    width: 100%;
+  }
+  .blog #read a {
+    width: 100%;
+    text-align: center;
+  }
+}

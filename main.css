@@ -194,3 +194,67 @@ main .container {
   width: 100%;
   left: 0;
 }
+@media (max-width: 768px) {
+  main {
+    height: fit-content;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    padding-bottom: 120px;
+  }
+  main .container {
+    flex-direction: column;
+  }
+  .info .name h1 {
+    font-size: 38px;
+  }
+  main .container .info,
+  main .container .image {
+    width: 100%;
+  }
+  .image {
+    align-items: center;
+    justify-content: center;
+  }
+  .info .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .buttons a {
+    width: 65%;
+    text-align: center;
+  }
+  main .stack {
+    margin-top: 70px;
+  }
+  body,
+  html {
+    overflow-x: hidden !important;
+  }
+  main .stack .skills {
+    padding: 0px 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  main .socials {
+    flex-direction: row-reverse;
+    bottom: 0%;
+  }
+  main .socials .line,
+  main .email .line {
+    height: 1px;
+    width: 70px;
+  }
+  main .email {
+    gap: 5px;
+    bottom: 3%;
+    right: initial;
+    left: 5%;
+    flex-direction: row-reverse;
+  }
+  .email a {
+    transform: rotate(0deg);
+    position: static;
+  }
+}

@@ -140,3 +140,24 @@
   width: 100%;
   object-fit: contain;
 }
+@media (max-width: 768px) {
+  .top-left-circle,
+  .top-right-circle {
+    display: none;
+  }
+  #about {
+    min-height: initial;
+    padding-bottom: 100px;
+  }
+  #about .about {
+    min-height: initial;
+    flex-direction: column;
+  }
+  #about .about .left {
+    border-right: 0px;
+  }
+  #about .about .left,
+  #about .about .right {
+    width: 100%;
+  }
+}

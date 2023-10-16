@@ -86,6 +86,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   box-shadow: 0px 0px var(--main);
   transition: all 0.25s ease-in-out;
+  color: #000;
 }
 .btn-main:hover {
   box-shadow: 5px 5px var(--main);
