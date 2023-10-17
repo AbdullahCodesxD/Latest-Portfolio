@@ -36,6 +36,7 @@ p,
 a {
   font-family: var(--para-font);
 }
+/* https://gotinu.com/web-developer-portfolio */
 h1::selection,
 h2::selection,
 h3::selection,
