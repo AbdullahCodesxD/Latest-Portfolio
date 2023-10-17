@@ -211,6 +211,12 @@ main .container {
   main .container .image {
     width: 100%;
   }
+  .image::before {
+    left: 7px;
+  }
+  .image::after {
+    right: 7px;
+  }
   .image {
     align-items: center;
     justify-content: center;

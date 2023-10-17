@@ -10,18 +10,20 @@ nav .container {
   justify-content: space-between;
   color: #f4f4f4;
 }
+nav .hamburger {
+  display: none;
+}
 nav .container ul {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-nav .container ul a,
-.logo {
+nav .container ul a {
   color: var(--main);
 }
 .logo {
-  font-size: 42px;
-  font-weight: lighter;
+  height: 50px;
+  aspect-ratio: 1.2/1;
 }
 nav a {
   position: relative;
@@ -39,4 +41,17 @@ nav a:after {
 nav a:hover:after {
   left: 0;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .container .nav-links {
+    position: fixed;
+    top: 48%;
+    background-color: rgba(0, 0, 0, 0.75);
+    transform: rotate(270deg);
+    padding-top: 5px;
+    width: 100vh;
+    right: -48.5vh;
+    z-index: 6;
+    justify-content: center;
+  }
 }

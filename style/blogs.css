@@ -72,6 +72,8 @@
 
 .blog img {
   max-width: 250px;
+  max-height: 250px;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   #blogs .container {

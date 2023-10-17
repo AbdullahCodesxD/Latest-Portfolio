@@ -12,3 +12,10 @@ html {
 body {
   background: var(--body-background);
 }
+@media (max-width: 768px) {
+  section,
+  main,
+  footer {
+    padding-right: 20px;
+  }
+}
