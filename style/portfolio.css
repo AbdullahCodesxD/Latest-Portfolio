@@ -101,6 +101,11 @@
 .project .description p {
   font-size: 13px;
 }
+@media (max-width: 1080px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 768px) {
   #portfolio .container {
     padding: 70px 30px 20px 30px;

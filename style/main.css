@@ -87,12 +87,12 @@ main .container {
   z-index: -1;
 }
 .image:before {
-  background: url("./img/Maindot.png");
+  background: url("../img/Maindot.png");
   top: -23px;
   left: 50px;
 }
 .image:after {
-  background: url("./img/darkdot.png");
+  background: url("../img/darkdot.png");
   right: -24px;
   bottom: -48px;
 }
