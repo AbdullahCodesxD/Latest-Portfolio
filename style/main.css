@@ -21,7 +21,7 @@ main .container {
 .image img {
   transition: all 0.25s ease-in-out;
     height:360px;
-  object-fit:cover;
+  object-fit:cover !important;
 }
 .image img:hover {
   filter: saturate(0.5);
