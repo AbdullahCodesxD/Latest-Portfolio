@@ -24,7 +24,8 @@ main .container {
 .image img:hover {
   filter: saturate(0.5);
   border-radius: 40px 0 40px 0;
-  height:360px
+  height:360px;
+  object-fit:cover;
   /* filter: ; */
 }
 /* Info CSS */
